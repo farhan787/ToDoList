@@ -2,83 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ToDo List Application</title>
-    <link rel="stylesheet" href="css/ToDo.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Lobster|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple ToDo Application</title>
 </head>
 <body>
-
-    <div class="wrapper">
-        
-        <div class="header"><span>
-<i class="fa fa-check-square-o" aria-hidden="true"></i> Todo List App 
-<i class="fa fa-check-square-o" aria-hidden="true"></i></span></div>
-        
-        <div class="wrap-list">
-            <ul class="list">
-                <li class="grey">
-                    <input type="checkbox">
-                    <label for="">Go to GYM</label>
-                </li>
-                 <li>
-                    <input type="checkbox">
-                    <label for="">Go To College</label>
-                </li >
-                 <li class="grey">
-                    <input type="checkbox">
-                    <label for="">Library</label>
-                </li>
-                 <li>
-                    <input type="checkbox">
-                    <label for="">Programming and Coding</label>
-                </li >
-                 <li class="grey">
-                    <input type="checkbox">
-                    <label for="">Data Structures</label>
-                </li>
-                 <li>
-                    <input type="checkbox">
-                    <label for="">Tutions</label>
-                </li>
-                 <li class="grey">
-                    <input type="checkbox">
-                    <label for="">TV and Games</label>
-                </li>
-                 <li>
-                    <input type="checkbox">
-                    <label for="">Shopping</label>
-                </li>
-                 <li class="grey">
-                    <input type="checkbox">
-                    <label for="">Home Work</label>
-                </li>
-                 <li>
-                    <input type="checkbox">
-                    <label for="">Hangout with Friends</label>
-                </li>
-                 <li class="grey">
-                    <input type="checkbox">
-                    <label for="">Social Networking</label>
-                </li>
-                <li >
-                    <input type="checkbox">
-                    <label for="">Attending Bootcamp</label>
-                </li>
-                <li class="grey">
-                    <input type="checkbox">
-                    <label for="">JavaScript</label>
-                </li>
-            </ul>
+    
+    <div id="container">
+        <div class="controls">
+            <h1>My Awesome TODO</h1>
+            <input type="text" id="input"><br>
+            <button type="button" id="add">Add Todo</button><br><br>
+            <button type="button" id="remove">Remove Done Todos</button><br><br>
+            <button type="button" id="removeall">Remove All Todos</button>
         </div>
-        
+
+        <ul id="list">
+            <li class="mycheck">
+                <input type="checkbox" id="check" >
+                <label>Go to Gym</label>
+            </li>
+            <li class="mycheck">
+                <input type="checkbox" id="check" checked>
+                <label>Record videos for YouTube</label>
+            </li>
+        </ul>
+
     </div>
-    
-    <div>
-        <footer>
-            A ToDo Application based on pure HTML and CSS
-        </footer>
-    </div>
-    
+
+
+
+
+    <script src="myScript.js"></script>
+
 </body>
 </html>
