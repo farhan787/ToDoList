@@ -16,6 +16,7 @@ body{
 #container h1{
     margin-top: 50px;
     margin-bottom: 50px;
+    font-family: 'Volkhov', serif;
     text-transform:uppercase;
 }
 #container ul{
@@ -111,6 +112,7 @@ body{
 #container .mycheck{
     opacity: 1;
     border-radius: 10px;
+    display: list-item;
 }
 
 .visual{

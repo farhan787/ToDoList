@@ -12,8 +12,12 @@ removeAllButton.addEventListener('click', removeAll)
 function addItem(){
     var input = document.querySelector('#input')
     var item = input.value
+
+    // remove the text inside input
+    input.value = ''
+
     var textnode = document.createTextNode(item)
-    
+
     if(item === ''){
         return false
     }else{
@@ -32,7 +36,7 @@ function addItem(){
         li.appendChild(label)
         ul.insertBefore(li, ul.childNodes[0])
         console.log(ul.childNodes[0])
-        
+
         setTimeout(() => {
             li.className = 'visual'
         }, 2)
